@@ -10,7 +10,15 @@ function display(num) {
     let minutes;
     let seconds;
 
-    minutes = num / 60;
+    minutes = Math.floor(num / 60);
+
+    seconds = num % 60;
+
+    if (seconds < 10) {
+        seconds = '0' + seconds;
+    }
+    
+    return minutes + ':' + seconds;
 }
 
 module.exports = {
