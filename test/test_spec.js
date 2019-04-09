@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 const { microwave } = require('../src/microwave');
 
 describe("microwave", function () {
-    describe("when start is pressed and no time is specified", function () {
+    describe("when no input is provided", function () {
         it("beeps", function () {
             // arrange
             const expected = "beep!"
@@ -15,7 +15,7 @@ describe("microwave", function () {
             expect(actual).to.equal(expected);
         })
     })
-    describe("when start is pressed and 5 seconds is specified", function () {
+    describe("when 5 is input", function () {
         it("shows 5", function () {
             // arrange
             const input = 5;
@@ -28,11 +28,11 @@ describe("microwave", function () {
             expect(actual).to.equal(expected);
         })
     })
-    describe("when 60 is 'inputed'", function () {
-        it("shows 1:00", function () {
+    describe("when 60 is input", function () {
+        it("should show 1:00", function () {
             // arrange
-            const input = 5;
-            const expected = 5
+            const input = 60;
+            const expected = "1:00"
 
             // act
             var actual = microwave(input);

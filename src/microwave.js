@@ -3,13 +3,16 @@ function microwave(input){
         return "beep!";
     }
 
-    return input;
+    return display(input);
 }
 
-function display(num)
-{
+function display(num) {
+    let minutes;
+    let seconds;
 
+    minutes = num / 60;
 }
+
 module.exports = {
     microwave
 };
