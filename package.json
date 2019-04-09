@@ -1,0 +1,23 @@
+{
+  "name": "motphx-mob-microwave",
+  "version": "0.0.0",
+  "description": "Mobbed microwave CLI for the Phoenix Ministry Of Test meet up",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaysonesmith/motphx-mob-microwave.git"
+  },
+  "author": "Phoenix Ministry Of Test",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaysonesmith/motphx-mob-microwave/issues"
+  },
+  "homepage": "https://github.com/jaysonesmith/motphx-mob-microwave#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.2"
+  }
+}
