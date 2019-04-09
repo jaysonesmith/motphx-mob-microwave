@@ -28,4 +28,17 @@ describe("microwave", function () {
             expect(actual).to.equal(expected);
         })
     })
+    describe("when 60 is 'inputed'", function () {
+        it("shows 1:00", function () {
+            // arrange
+            const input = 5;
+            const expected = 5
+
+            // act
+            var actual = microwave(input);
+
+            // assert
+            expect(actual).to.equal(expected);
+        })
+    })
 })
