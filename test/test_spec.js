@@ -16,7 +16,7 @@ describe("microwave", function () {
         })
     })
     describe("when start is pressed and 5 seconds is specified", function () {
-        it("beeps", function () {
+        it("shows 5", function () {
             // arrange
             const input = 5;
             const expected = 5

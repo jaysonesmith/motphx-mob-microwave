@@ -1,5 +1,8 @@
-function microwave(){
-    return 'beep!';
+function microwave(input){
+    if( input=== "" || input === undefined ){
+        return "beep!";
+    }
+    return input;
 }
 
 module.exports = {
